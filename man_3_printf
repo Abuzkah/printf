@@ -1,0 +1,60 @@
+.TH man 3 "20 Oct 2022" "Alx"
+.SH NAME
+.B _printf
+- formatted output for printing data
+.SH SYNOPSIS
+.B #include \(dqmain.h\(dq
+.sp
+.B int _printf(const char *format, ...);
+.sp
+.B int printch(va_list valist);
+.sp
+.B int prints(va_list valist);
+.sp
+.B int printdi(va_list valist);
+.sp
+.B int printper(va_list valist);
+.sp
+.B int printbi(va_list valist);
+.sp
+.B int printrev(va_list valist);
+.sp
+.B int print_rev(char *s);
+.sp
+.B int printrot(va_list valist);
+.sp
+.B char *rot13(char *s1);
+.sp
+.B int _putchar(char c);
+.sp
+.B int _puts(char *str);
+.sp
+.SH DESCRIPTION
+Prints a formatted string to the standard output as in the printf function of the C standard library. It is a handy way to produce precisely-formatted output from numerical or textual arguments.
+
+.B Format string
+
+A format string that can contain any character.
+
+.B Conversion specifiers
+
+Specify the data type of the variable that its going to be printed.
+
+.sp
+.B i, d
+- Prints integers and decimals arguments.
+.sp
+.B c
+- Prints a single character.
+.sp
+.B s
+- Prints a string.
+.sp
+.B %
+- An espace sequence for the character %.
+.SH NOTES
+_printf depends of system call write() which is implemented throught a custom printing function: _putchar.
+.SH BUGS
+No known bugs. If any bug is detected, please do not hesitate to open an issue.
+.SH AUTHORS
+Written by Abubakar Mohamed and Abdikhaliq Ahmed.
